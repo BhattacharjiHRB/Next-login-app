@@ -24,9 +24,9 @@ export async function POST(req: NextRequest, ){
         }
         console.log(User);
 
-        user.isVerified = true,
-        user.verifyToken = undefined,
-        user.verifyTokenExpiry = undefined,
+        user.isVerfied = true,
+        user.verfyToken = undefined,
+        user.verfyTokenExpiry = undefined,
         await user.save()
 
         return NextResponse.json({
