@@ -37,7 +37,11 @@ export default function VerifyEmailPage(){
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2 gap-5">
             <h1 className="text-4xl "> Verify Your Email</h1>
-            <h3 className="p-2 bg-emerald-700 text-zinc-50 rounded-lg">{token ?`${token}`:"Not Verified"}</h3>
+            <h3 
+                className="p-2 bg-emerald-700 text-zinc-50 rounded-lg">
+                {token ?`${token}`:"Not Verified"}
+                
+            </h3>
 
                 {verified &&(
                     <div>
@@ -48,7 +52,9 @@ export default function VerifyEmailPage(){
                 )};
                 {error &&(
                     <div> 
-                        <h2 className="bg-red-500 p-5 text-black">Error Occurd</h2>
+                        <h2 className="bg-red-500 p-5 text-black">
+                            Error Occurd
+                        </h2>
                     </div>
                 )}
 
